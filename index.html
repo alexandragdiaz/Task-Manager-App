@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+
+    <!--conecta el CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+    <p>Total: <span id="total">0</span> |
+    Hechas: <span id="hechas">0</span> |
+    Pendientes: <span id="pendientes">0</span>
+    </p>
+
+<body>
+
+    <h1>📝 Task Manager</h1>
+
+    <input type="text" id="tareaInput" placeholder="Escribe una tarea">
+
+    <select id="categoria">
+        <option value="">Seleccione</option>
+        <option value="📚">📚 Estudio</option>
+        <option value="💼">💼 Trabajo</option>
+        <option value="🏠">🏠 Hogar</option>
+        <option value="otra">Otra</option>
+    </select>
+
+    <input type="text" id="otraCategoria" placeholder="Otra categoría" style="display:none;">
+
+    <button onclick="agregarTarea()">Agregar</button>
+
+    <div id="lista"></div>
+
+    <!-- 🔥 JS siempre al final -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

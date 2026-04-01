@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* TÍTULO */
+h1 {
+    color: #333;
+}
+
+/* INPUTS Y SELECT */
+input, select {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+/* BOTÓN AGREGAR */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* CONTENEDOR DE LISTA */
+#lista {
+    margin-top: 20px;
+}
+
+/* TARJETAS DE TAREAS */
+#lista div {
+    background: white;
+    margin: 10px auto;
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#lista div:hover {
+    transform: scale(1.03);
+    transition: 0.2s;
+}
