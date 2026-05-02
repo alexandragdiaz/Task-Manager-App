@@ -1,43 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Task Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--conecta el CSS -->
+    <title>Lista de tareas</title>
+
     <link rel="stylesheet" href="styles.css">
 </head>
-
-
-    <p>Total: <span id="total">0</span> |
-    Hechas: <span id="hechas">0</span> |
-    Pendientes: <span id="pendientes">0</span>
-    </p>
-
 <body>
+    
+    <div class=" Contenedor">
+        <h1> Lista de tareas </h1>
 
-    <h1>📝 Task Manager</h1>
+        <p id="contador">
+        Tareas pendientes: 0
+        </p>
 
-    <input type="text" id="tareaInput" placeholder="Escribe una tarea">
+        <input type="text" id="inputTarea" placeholder="Escribe una tarea">
 
-    <select id="categoria">
-        <option value="">Seleccione</option>
-        <option value="📚">📚 Estudio</option>
-        <option value="💼">💼 Trabajo</option>
-        <option value="🏠">🏠 Hogar</option>
-        <option value="otra">Otra</option>
-    </select>
+        <button id="btnAgregar">
+            Agregar
+        </button>
 
-    <input type="text" id="otraCategoria" placeholder="Otra categoría" style="display:none;">
+        <button id="btnEliminar">
+            Eliminar
+        </button>
+        
+        <ul id="listaTareas"></ul>
 
-    <button onclick="agregarTarea()">Agregar</button>
+        
+    </div>
 
-    <div id="lista"></div>
-
-    <!-- 🔥 JS siempre al final -->
-    <script src="script.js"></script>
-
+    <script src="app.js"></script>
 </body>
-
 </html>

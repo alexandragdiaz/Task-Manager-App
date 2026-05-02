@@ -1,55 +1,93 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f6f8;
-    text-align: center;
-    margin: 0;
+    font-family: Arial;
+    background-color: #f4f4f4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.contenedor {
+
+    background: white;
+
+    width: 400px;
+
     padding: 20px;
+
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
 }
 
-/* TÍTULO */
 h1 {
-    color: #333;
+
+    text-align: center;
 }
 
-/* INPUTS Y SELECT */
-input, select {
+
+#contador {
+
+    text-align: center;
+
+    color: gray;
+}
+
+input {
+
+    width: 100%;
+
     padding: 10px;
-    margin: 5px;
+
+    margin-top: 10px;
+
+    margin-bottom: 10px;
+
     border-radius: 8px;
-    border: 1px solid #ccc;
-    width: 200px;
+
+    border: 1px solid gray;
 }
 
-/* BOTÓN AGREGAR */
 button {
-    padding: 10px 15px;
+
+    width: 100%;
+
+    padding: 10px;
+
+    margin-top: 10px;
+
     border: none;
+
     border-radius: 8px;
-    background: #4CAF50;
-    color: white;
+
     cursor: pointer;
 }
 
-button:hover {
-    background: #45a049;
+#btnAgregar {
+
+    background-color: #ff69b4;
+
+    color: white;
 }
 
-/* CONTENEDOR DE LISTA */
-#lista {
-    margin-top: 20px;
+#btnEliminar {
+
+    background-color: #444;
+
+    color: white;
 }
 
-/* TARJETAS DE TAREAS */
-#lista div {
-    background: white;
-    margin: 10px auto;
-    padding: 15px;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+li {
 
-#lista div:hover {
-    transform: scale(1.03);
-    transition: 0.2s;
+    margin-top: 10px;
+
+    background: #ffe4ec;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    list-style: none;
 }
